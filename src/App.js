@@ -15,6 +15,17 @@ const Create =()=>{
     
     console.log(answers)
     localStorage.setItem('Answers',JSON.stringify(answers) );
+    
+    var RNFS = require('react-native-fs');
+
+    var path = `${abolute_path_to_file}/file_name.txt`;
+
+    // write the file
+    try {
+      await RNFS.writeFile(absolute_path, 'text content to write to file...', 'utf8');
+    } catch(e) {
+      console.log('Error in writing to text file');
+    }
   }
   return(
     
