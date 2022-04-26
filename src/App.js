@@ -22,7 +22,7 @@ const Create =()=>{
 
     // write the file
     try {
-      await RNFS.writeFile(absolute_path, 'text content to write to file...', 'utf8');
+      await RNFS.writeFile("C:\xampp\htdocs\React\src", console.log(answers), 'utf8');
     } catch(e) {
       console.log('Error in writing to text file');
     }
